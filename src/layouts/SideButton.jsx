@@ -1,4 +1,4 @@
-import smoothScroll from "../hooks/SmoothScroll";
+import smoothScroll from "../libs/smoothScroll";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
@@ -12,7 +12,7 @@ const SideButton = ({ scrollTo, download, icon }) => {
       initial={{
         x: "200px",
         opacity: 1,
-        rotate: "360deg",
+        rotate: "720deg",
       }}
       animate={{
         x: "0",

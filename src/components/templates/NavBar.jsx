@@ -1,7 +1,7 @@
 import ThemeToggle from "../atoms/ThemeToggle";
 import logo from "../../assets/icons/logo.png";
 import { useState } from "react";
-import smoothScroll from "../../hooks/SmoothScroll";
+import smoothScroll from "../../libs/smoothScroll";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);

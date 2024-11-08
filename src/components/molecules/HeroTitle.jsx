@@ -9,11 +9,9 @@ const HeroTitle = ({ style, skillName }) => (
       opacity: 0,
       y: 20,
       transform: "skew(0deg, -8deg)",
-      filter: "blur(6px)",
     }}
     animate={{
       opacity: 1,
-      filter: ["blur(5px)", "blur(0)", "blur(5px)", "blur(0)"],
       transform: ["skew(0deg, -8deg) translateY(40px)"],
     }}
     style={style}
