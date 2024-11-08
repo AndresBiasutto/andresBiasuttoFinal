@@ -1,4 +1,4 @@
-import PortfolioCard from "../organisms/PortfolioCard";
+import PortfolioCard from "../molecules/PortfolioCard";
 import portfolioData from "../../data/portfolioData";
 
 const Portfolio = () => {

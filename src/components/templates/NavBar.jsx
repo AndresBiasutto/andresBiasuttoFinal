@@ -1,29 +1,22 @@
 import ThemeToggle from "../atoms/ThemeToggle";
 import logo from "../../assets/icons/logo.png";
 import { useState } from "react";
+import smoothScroll from "../../hooks/SmoothScroll";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
-
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
-  const handleScroll = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   const buttonBehavior= (id)=>{
-    handleScroll(id)
+    smoothScroll(id)
     toggleMenu()
   }
   return (
     <div className=" z-40 fixed top-0 left-0 w-full h-20 md:h-10 lg:h-10 bg-light-secondary/80 dark:bg-dark-secondary/80 border-b border-b-light-lightBackground dark:border-b-dark-darkBackground">
       <div className=" z-20 absolute top-0 left-0 px-1 flex flex-row h-full w-full justify-between items-center">
         <div className="flex flex-row items-center justify-center gap-2">
-          <button onClick={() => handleScroll("inicio")}>
+          <button onClick={() => smoothScroll("inicio")}>
             <img src={logo} className=" h-9 w-14 hover:-rotate-12 transition" />
           </button>
         </div>
