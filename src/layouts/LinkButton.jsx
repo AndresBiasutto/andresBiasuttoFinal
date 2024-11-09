@@ -2,13 +2,13 @@ import smoothScroll from "../libs/smoothScroll";
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
-const SideButton = ({ scrollTo, download, icon }) => {
+const LinkButton = ({ scrollTo, download, icon }) => {
   return (
     <motion.a
       onClick={() => smoothScroll(scrollTo)}
       href={download}
       target={`${download && "_blank"}`}
-      className="rounded-full border-4 border-double bg-light-lightBackground hover:bg-light-background dark:bg-dark-darkBackground dark:hover:bg-dark-darkBackground hover:scale-110 border-light-accent dark:border-dark-accent transition overflow-hidden  "
+      className="relative group rounded-full border-4 border-double bg-light-lightBackground hover:bg-light-background dark:bg-dark-darkBackground dark:hover:bg-dark-darkBackground hover:scale-110 border-light-accent dark:border-dark-accent transition overflow-hidden  "
       initial={{
         x: "200px",
         opacity: 1,
@@ -16,12 +16,12 @@ const SideButton = ({ scrollTo, download, icon }) => {
       }}
       animate={{
         x: "0",
-        opacity:1,
+        opacity: 1,
         rotate: "0",
       }}
       transition={{
         duration: 2,
-        delay: 1
+        delay: 1,
       }}
     >
       <img
@@ -33,10 +33,10 @@ const SideButton = ({ scrollTo, download, icon }) => {
   );
 };
 
-SideButton.propTypes = {
+LinkButton.propTypes = {
   scrollTo: PropTypes.string,
   download: PropTypes.string,
   icon: PropTypes.string,
 };
 
-export default SideButton;
+export default LinkButton;

@@ -29,7 +29,7 @@ h4 {
     @apply font-caveat text-2xl text-dark-darkBackground dark:text-light-background transition underline italic;
   }
   span {
-    @apply font-caveat italic text-light-text dark:text-dark-text transition px-2 bg-light-background dark:bg-dark-background rounded-lg;
+    @apply font-caveat italic text-light-text dark:text-dark-text transition px-2 bg-light-accent dark:bg-dark-accent rounded-lg;
   }
   button {
     @apply font-caveat h-9 rounded-md text-dark-text dark:text-light-text transition hover:scale-105;

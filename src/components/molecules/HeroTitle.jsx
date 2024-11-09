@@ -25,7 +25,7 @@ const HeroTitle = ({ style, skillName }) => (
       margin: "-300px",
       amount: "all",
     }}
-    className="absolute top-52 left-0 h-min w-full flex flex-col items-center justify-center gap-2 bg-gradient-to-r from-light-lightBackground/80 from-10% via-light-secondary/80 via-30% to-light-lightBackground/80 to-90% dark:bg-dark-background rounded-md border-2 border-double border-gray-800 dark:border-gray-200 shadow-lg"
+    className="absolute top-52 left-0 h-min w-full flex flex-col items-center justify-center gap-2 bg-gradient-to-r from-light-lightBackground/80 from-10% via-light-secondary/80 via-30% to-light-lightBackground/80 to-90% dark:bg-dark-background/80 border-4 border-double border-light-accent dark:border-dark-accent"
   >
     <div className="flex flex-col justify-center items-start">
       <motion.h1 className=" p-2 lg:scale-100 ">Andrés Biasutto</motion.h1>

@@ -21,7 +21,7 @@ const Contact = () => {
       className=" overflow-hidden h-screen lg:h-[150vh] w-full grid grid-cols-1 relative md:static md:grid-cols-2 bg-light-background dark:bg-dark-background transition"
     >
       <div className=" absolute md:static h-full w-full flex items-center justify-center p-6 overflow-hidden">
-        <div className="z-0 relative h-full md:h-full  w-full bg-light-background dark:bg-dark-background transition overflow-hidden border-4 border-double border-orange-950">
+        <div className="z-0 relative h-full md:h-full  w-full bg-light-background dark:bg-dark-background transition overflow-hidden border-4 border-double border-light-accent dark:border-dark-accent">
           <img src={cloud} className="z-10 absolute left-0 -top-20 w-full " />
           <motion.img
             src={city}

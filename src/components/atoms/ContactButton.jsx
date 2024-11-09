@@ -1,5 +1,5 @@
 import images from "../../data/imgUrls";
-import SideButton from "../../layouts/SideButton";
+import SideButton from "../../layouts/LinkButton";
 
 const ContactButton = () => {
     const mail = images.icons.mail;

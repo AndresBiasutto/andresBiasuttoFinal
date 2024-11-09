@@ -7,6 +7,7 @@ const imgUrls={
         player: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730250677/player_din4ei.png"
     },
     about:{
+        img: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1731127560/yo_fnqjuy.png",
         cloud2: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252757/cloud2_qrbrku.png",
         cloud1: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252757/cloud1_kylrlg.png",
         atomicMan: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252756/atomicMan_vhz4jt.png",
