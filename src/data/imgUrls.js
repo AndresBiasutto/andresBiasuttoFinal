@@ -35,7 +35,9 @@ const imgUrls={
         sequelize: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252753/Sequelize_hqaifp.png",
         sql: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252753/sql_lanawf.png",
         tailwind: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252753/Tailwind_ijlnbk.png",
-        ts: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252754/ts_jserz1.png"
+        ts: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252754/ts_jserz1.png",
+        enFlag: "https://cdn.icon-icons.com/icons2/4023/PNG/512/united_kingdom_gb_gbr_flag_icon_255824.png",
+        esFlag: "https://images.vexels.com/media/users/3/164599/isolated/lists/ce858535b77f22068049aca2457e59ad-circulo-de-icono-de-idioma-de-bandera-de-espana.png"
     },
     portfolio:{
         campusVirtual: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252754/campusVirtual_bnk049.png",

@@ -1,7 +1,7 @@
-import PropTypes from "prop-types";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
-const AboutImageMotion = ({ src, style, className, transition }) => (
+const ImageInMotion = ({ src, style, className, transition }) => (
   <motion.img
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
@@ -12,11 +12,11 @@ const AboutImageMotion = ({ src, style, className, transition }) => (
   />
 );
 
-AboutImageMotion.propTypes= {
+ImageInMotion.propTypes= {
     src: PropTypes.string,
     style: PropTypes.string,
     className: PropTypes.string,
     transition: PropTypes.string
 }
 
-export default AboutImageMotion;
+export default ImageInMotion;

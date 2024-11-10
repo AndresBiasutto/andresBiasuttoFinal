@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import ImageMotion from "../atoms/AboutImageMotion";
+import ImageMotion from "../atoms/ImageInMotion";
 
 const AboutCloud = ({ src, yTransform, scaleTransform }) => (
   <ImageMotion

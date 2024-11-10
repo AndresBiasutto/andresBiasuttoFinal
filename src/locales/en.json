@@ -1,0 +1,41 @@
+{
+  "lang": "En",
+  "navBarBtns": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Full stack web developer",
+    "title2": "Freelancer",
+    "title3": "ux/ui designer",
+    "title4": "drawing fan"
+  },
+  "about": {
+    "aboutMe": "Full stack web developer with a focus on front-end and a strong foundation in UX/UI. Passionate about creating visually appealing experiences, I combine illustration and design skills to build intuitive interfaces that excel in both functionality and aesthetics.",
+    "techTitle": "Skills",
+    "techTypeTitles": {
+      "lang": "Languages",
+      "frame": "Frmameworks",
+      "data": "Data",
+      "orm": "Orms"
+    }
+  },
+  "portfolio": {
+    "sectionTitle": "Some of my job",
+    "sml": {
+        "description": "App aimed at classifying and completing customer information. My work included creating the authentication system, user role assignment, and route protection, both on the back-end and front-end."
+    },
+    "campus": {
+        "description": "This app allows for agile course creation and management. Teachers can easily share videos and files, while students interact in real time. With an intuitive interface, it simplifies the administration and access to educational content."
+    },
+    "lds": {
+        "description": "The goal of this small app is to check and compare product prices from three supermarket chains. Very popular among my friends."
+    },
+    "shami": {
+        "description": "App created to manage and control requests between different businesses and their suppliers in an efficient and organized manner."
+    }
+},
+  "contact": "Contact"
+}

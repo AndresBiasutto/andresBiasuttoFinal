@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useScroll, useTransform } from "framer-motion";
-import ImageMotion from "../atoms/HeroImageMotion";
 import Title from "../molecules/HeroTitle";
 
 import { motion } from "framer-motion";
 import UseViewPortSize from "../../hooks/UseViewPortSize";
 
 import imgUrls from "../../data/imgUrls";
+import { useTranslation } from "react-i18next";
+import ImageInMotion from "../atoms/ImageInMotion";
 
 const HeroContent = () => {
   const {background, ball, defender1, defender2, player}= imgUrls.hero
@@ -31,13 +32,10 @@ const HeroContent = () => {
   const def1Transform = UseViewPortSize(def1xSm, def1xLg);
   const def2Transform = UseViewPortSize(def2Sm, def2Lg);
 
+  const { t } = useTranslation();
+
   useEffect(() => {
-    const aboutMe = [
-      " a Full stack web developer",
-      " a Freelancer",
-      " a ux/ui designer",
-      " a drawing fan",
-    ];
+    const aboutMe = [t("hero.title1"),t("hero.title2"), t("hero.title3"), t("hero.title4")];
     let currentIndex = 0;
 
     const intervalId = setInterval(() => {
@@ -53,13 +51,13 @@ const HeroContent = () => {
       id="inicio"
 
     >
-      <ImageMotion
+      <ImageInMotion
         src={background}
         style={{ y: backgoundTransform, scale: stadiumScale }}
         transition={{ duration: 2, delay: 1 }}
         className="absolute bottom-0 lg:-bottom-36 left-0 w-full"
       />
-      <ImageMotion
+      <ImageInMotion
         src={defender2}
         style={{ y: def2Transform, x: def1Transform, scale: stadiumScale }}
         transition={{ duration: 2, delay: 1 }}
@@ -69,20 +67,19 @@ const HeroContent = () => {
         style={{ y: titleY }}
         skillName={skillName}
       />
-
-      <ImageMotion
+      <ImageInMotion
         src={player}
         style={{ y: playerTransform, scale: stadiumScale }}
         transition={{ duration: 2, delay: 1 }}
         className="absolute bottom-0 lg:-bottom-36 left-0 w-full"
       />
-      <ImageMotion
+      <ImageInMotion
         src={ball}
         style={{ y: ballTransform, scale: stadiumScale }}
         transition={{ duration: 2, delay: 1 }}
         className="absolute bottom-0 lg:-bottom-36 left-0 w-full"
       />
-      <ImageMotion
+      <ImageInMotion
         src={defender1}
         style={{ y: def1Transform }}
         transition={{ duration: 2, delay: 1 }}

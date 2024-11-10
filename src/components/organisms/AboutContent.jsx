@@ -1,12 +1,13 @@
 // src/components/organisms/AboutContent.js
 import { useScroll, useTransform } from "framer-motion";
-import ImageMotion from "../atoms/AboutImageMotion";
+import ImageInMotion from "../atoms/ImageInMotion.jsx";
 import Cloud from "../molecules/AboutCloud";
 import TechCard from "../molecules/AboutTechCard";
 import UseViewPortSize from "../../hooks/UseViewPortSize";
 import { motion } from "framer-motion";
 import { languages, frameworks, databases, orm } from "../../data/aboutData.js";
 import imgUrls from "../../data/imgUrls.js";
+import { useTranslation } from "react-i18next";
 
 const AboutContent = () => {
   const { cloud1, cloud2, airship, atomicMan, img } = imgUrls.about;
@@ -27,7 +28,7 @@ const AboutContent = () => {
   );
 
   const atomicYTransform = UseViewPortSize(atomicYSm, atomicYLg);
-
+  const { t } = useTranslation();
   return (
     <motion.div
       id="about"
@@ -36,13 +37,13 @@ const AboutContent = () => {
     >
       <Cloud src={cloud1} yTransform={cloud1Y} scaleTransform={cloudScale} />
       <Cloud src={cloud2} yTransform={cloud2Y} scaleTransform={cloudScale} />
-      <ImageMotion
+      <ImageInMotion
         src={airship}
         style={{ x: airshipX, y: airshipY, scale: airshipScale }}
         transition={{ duration: 2, delay: 1 }}
         className="absolute bottom-0 lg:-bottom-20 left-0 w-full"
       />
-      <ImageMotion
+      <ImageInMotion
         src={atomicMan}
         style={{ y: atomicYTransform, scale: atomicScale }}
         transition={{ duration: 2, delay: 1 }}
@@ -55,19 +56,15 @@ const AboutContent = () => {
             src={img}
           />
           <p className=" bg-dark-primary/45 dark:bg-dark-background/45 px-1">
-            Desarrollador web full stack con enfoque en el
-            front end y una sólida base en UX/UI. Apasionado por la creación de
-            experiencias visuales atractivas, combino habilidades en ilustración
-            y diseño para construir interfaces intuitivas que destacan tanto en
-            funcionalidad como en estética.
+            {t("about.aboutMe")}
           </p>
           <div className="w-full h-full flex flex-col items-center justify-start gap-2">
-            <h3>Tecnologías</h3>
+            <h3>{t("about.techTitle")}</h3>
             <div className=" z-10 w-full h-full grid grid-cols-4 gap-4 p-4">
-              <TechCard title="Lenguajes" technologies={languages} />
-              <TechCard title="Frameworks" technologies={frameworks} />
-              <TechCard title="Datos" technologies={databases} />
-              <TechCard title="Orm" technologies={orm} />
+              <TechCard title={t("about.techTypeTitles.lang")} technologies={languages} />
+              <TechCard title={t("about.techTypeTitles.frame")} technologies={frameworks} />
+              <TechCard title={t("about.techTypeTitles.data")} technologies={databases} />
+              <TechCard title={t("about.techTypeTitles.orm")} technologies={orm} />
             </div>
           </div>
         </div>

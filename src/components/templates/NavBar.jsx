@@ -2,16 +2,20 @@ import ThemeToggle from "../atoms/ThemeToggle";
 import logo from "../../assets/icons/logo.png";
 import { useState } from "react";
 import smoothScroll from "../../libs/smoothScroll";
+import { useTranslation } from "react-i18next";
+import LangButton from "../atoms/LangButton";
 
 const NavBar = () => {
+  const { t } = useTranslation();
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-  const buttonBehavior= (id)=>{
-    smoothScroll(id)
-    toggleMenu()
-  }
+  const buttonBehavior = (id) => {
+    smoothScroll(id);
+    toggleMenu();
+  };
+
   return (
     <div className=" z-40 fixed top-0 left-0 w-full h-20 md:h-10 lg:h-10 bg-light-secondary/80 dark:bg-dark-secondary/80 border-b border-b-light-lightBackground dark:border-b-dark-darkBackground">
       <div className=" z-20 absolute top-0 left-0 px-1 flex flex-row h-full w-full justify-between items-center">
@@ -44,27 +48,28 @@ const NavBar = () => {
               onClick={() => buttonBehavior("inicio")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
-              Inicio
+              {t("navBarBtns.home")}
             </button>
             <button
               onClick={() => buttonBehavior("about")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
-              sobre mi
+               {t("navBarBtns.about")}
             </button>
             <button
               onClick={() => buttonBehavior("portfolio")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
-              porfolio
+               {t("navBarBtns.portfolio")}
             </button>
             <button
               onClick={() => buttonBehavior("contact")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
-              Contacto
+               {t("navBarBtns.contact")}
             </button>
           </nav>
+              <LangButton />
           <ThemeToggle />
         </div>
       </div>
