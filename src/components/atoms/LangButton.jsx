@@ -20,9 +20,9 @@ const handleClick= (lang)=>{
     <div className="flex space-x-2">
     <button className="h-6 w-6" onClick={() => handleClick(toggle? "en": "es")}>
       { toggle ? (
-        <img className="h-6 w-6" src={flagEn} />
-      ) : (
         <img className="h-6 w-6" src={flagEs} />
+      ) : (
+        <img className="h-6 w-6" src={flagEn} />
       )}
     </button>
   </div>

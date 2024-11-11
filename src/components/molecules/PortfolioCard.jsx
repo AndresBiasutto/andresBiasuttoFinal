@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useTranslation } from "react-i18next";
 import imgUrls from "../../data/imgUrls";
 import LinkButton from "../../layouts/LinkButton";
 
@@ -12,6 +13,8 @@ const PortfolioCard = ({
 }) => {
   const sBackground = imgUrls.sBackground;
   const { link, github } = imgUrls.icons;
+  const { t } = useTranslation();
+
   return (
     <div
       target="_blank"
@@ -42,9 +45,9 @@ const PortfolioCard = ({
                 ))}
               </ul>
             </div>
-            <div className="w-full h-full flex items-end justify-center gap-2">
-              <LinkButton icon={github} download={links[1]} />
-              <LinkButton icon={link} download={links[0]} />
+            <div className="w-full h-full flex flex-row items-end justify-center gap-2">
+              <LinkButton icon={github} message={t("linkBtns.gitLink")} download={links[1]} />
+              <LinkButton icon={link} message={t("linkBtns.PortfolioLink")} download={links[0]} />
             </div>
           </div>
         </div>

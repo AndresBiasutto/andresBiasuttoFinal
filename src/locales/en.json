@@ -1,5 +1,11 @@
 {
   "lang": "En",
+  "linkBtns":{
+    "cvLink": "See my CV",
+    "contactLink": "Call me now!",
+    "gitLink": "View repository",
+    "PortfolioLink": "Visit Demo"
+  },
   "navBarBtns": {
     "home": "Home",
     "about": "About",

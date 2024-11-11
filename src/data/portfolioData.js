@@ -18,7 +18,7 @@ const portfolioData = [
       "Cloudinary",
       "Tailwind",
     ],
-    links:["https://demo.com", "https://github.com/Smlappadm/sml-app"],
+    links:["https://sml-app.vercel.app/sign-in?redirect_url=%2Fprotected", "https://github.com/Smlappadm/sml-app"],
     state: "Finish"
   },
   {
@@ -32,13 +32,11 @@ const portfolioData = [
       "Redux",
       "Node",
       "Express",
-      "MongoDB",
-      "Mongoose",
-      "Clerk",
-      "Cloudinary",
+      "PostgreSQL",
+      "Sequelize",
       "Tailwind",
     ],
-    links:["https://demo.com", "https://github.com/AndresBiasutto/freeCampus"],
+    links:["https://maricampus.netlify.app/", "https://github.com/AndresBiasutto/freeCampus"],
     state: "In progress"
   },
   {

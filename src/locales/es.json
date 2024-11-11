@@ -1,10 +1,16 @@
 {
   "lang": "Es",
+  "linkBtns":{
+    "cvLink": "Ver mi CV",
+    "contactLink": "¡Contáctame ahora!",
+    "gitLink": "Ver repositorio",
+    "PortfolioLink": "Visitar Demo"
+  },
   "navBarBtns": {
     "home": "Inicio",
     "about": "Sobre mí",
     "portfolio": "Porfolio",
-    "contact": "Contacto"
+    "contact": "Contácto"
   },
   "hero": {
     "title1": "Full stack web developer",
