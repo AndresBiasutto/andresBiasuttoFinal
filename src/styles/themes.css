@@ -1,0 +1,17 @@
+/* Theme configuration */
+
+:root {
+  --color-primary: #403D39;
+  --color-secondary: #8C8881;
+  --color-accent: #F2C288;
+}
+
+[data-theme="dark"] {
+  --color-primary: #BFBFBF;
+  --color-secondary: #737373;
+  --color-accent: #107361;
+}
+
+body {
+  color: var(--color-primary);
+}

@@ -1,17 +1,15 @@
 import ThemeToggle from "../atoms/ThemeToggle";
 import logo from "../../assets/icons/logo.png";
-import { useState } from "react";
-import smoothScroll from "../../libs/smoothScroll";
+import smoothScroll from "../../utils/smoothScroll";
 import { useTranslation } from "react-i18next";
 import LangButton from "../atoms/LangButton";
+import useMenuState from "../../hooks/useMenuState";
 
 const NavBar = () => {
   const { t } = useTranslation();
-  const [showMenu, setShowMenu] = useState(false);
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
-  const buttonBehavior = (id) => {
+  const { isOpen, toggleMenu } = useMenuState();
+
+  const handleNavClick = (id) => {
     smoothScroll(id);
     toggleMenu();
   };
@@ -30,7 +28,7 @@ const NavBar = () => {
         >
           <div
             className={`w-10 h-10 flex flex-col justify-center items-center ${
-              showMenu ? "gap-0" : "gap-2"
+              isOpen ? "gap-0" : "gap-2"
             } transition-all border-2 border-double border-light-accent dark:border-dark-accent bg-light-lightBackground hover:bg-light-background dark:bg-dark-darkBackground dark:hover:bg-dark-darkBackground`}
           >
             <div className="h-1 w-5/6 border-2 border-double border-light-accent dark:border-dark-accent bg-light-lightBackground hover:bg-light-background dark:bg-dark-darkBackground dark:hover:bg-dark-darkBackground"></div>
@@ -41,29 +39,29 @@ const NavBar = () => {
         <div className="flex flex-row items-center justify-center gap-2">
           <nav
             className={` absolute right-0 ${
-              showMenu ? "top-20" : "-top-96"
+              isOpen ? "top-20" : "-top-96"
             } transition-all flex flex-col w-full bg-light-secondary/80 dark:bg-dark-secondary/80 md:bg-transparent border-b-light-lightBackground dark:border-b-dark-darkBackground  md:static md:flex md:flex-row md:items-center md:justify-center gap-4`}
           >
             <button
-              onClick={() => buttonBehavior("inicio")}
+              onClick={() => handleNavClick("inicio")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
               {t("navBarBtns.home")}
             </button>
             <button
-              onClick={() => buttonBehavior("about")}
+              onClick={() => handleNavClick("about")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
                {t("navBarBtns.about")}
             </button>
             <button
-              onClick={() => buttonBehavior("portfolio")}
+              onClick={() => handleNavClick("portfolio")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
                {t("navBarBtns.portfolio")}
             </button>
             <button
-              onClick={() => buttonBehavior("contact")}
+              onClick={() => handleNavClick("contact")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md text-2xl`}
             >
                {t("navBarBtns.contact")}

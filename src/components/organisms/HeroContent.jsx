@@ -44,7 +44,7 @@ const HeroContent = () => {
     }, 6000);
 
     return () => clearInterval(intervalId);
-  }, []);
+  }, [t]);
 
   return (
     <motion.section

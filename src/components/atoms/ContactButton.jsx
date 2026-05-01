@@ -1,5 +1,5 @@
 import images from "../../data/imgUrls";
-import SideButton from "../../layouts/LinkButton";
+import SideButton from "../atoms/LinkButton";
 import PropTypes from "prop-types";
 
 const ContactButton = ({message}) => {

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useTranslation } from "react-i18next";
 import imgUrls from "../../data/imgUrls";
-import LinkButton from "../../layouts/LinkButton";
+import LinkButton from "../atoms/LinkButton";
 
 const PortfolioCard = ({
   name,

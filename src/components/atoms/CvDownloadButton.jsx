@@ -1,7 +1,7 @@
 import images from "../../data/imgUrls";
 import cvEs from "../../assets/CV Andrés Biasutto.pdf";
 import cvEng from "../../assets/Andrés Biasutto CV eng.pdf";
-import SideButton from "../../layouts/LinkButton";
+import SideButton from "../atoms/LinkButton";
 import PropTypes from "prop-types";
 
 const CvDownloadButton = ({lang, message}) => {

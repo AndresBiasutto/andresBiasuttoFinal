@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import imgUrls from "../../data/imgUrls";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+ const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
   const {lightOff, lightOn}=imgUrls.icons
 
   // Cambia el tema y lo guarda en localStorage
@@ -17,7 +17,7 @@ export default function ThemeToggle() {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(theme === "dark" ? "light": "dark");
   };
 
   return (
@@ -25,8 +25,8 @@ export default function ThemeToggle() {
       {theme === "dark" ? (
         <img className="h-6 w-6" src={lightOff} />
       ) : (
-        <img className="h-6 w-6" src={lightOn} />
-      )}
-    </button>
-  );
-}
+         <img className="h-6 w-6" src={lightOn} />
+       )}
+     </button>
+   );
+ }
