@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import "./styles/base.css";
 @import "./styles/animations.css";
 @import "./styles/themes.css";
@@ -28,16 +29,16 @@
   }
   
   p {
-    @apply font-caveat text-2xl text-light-text dark:text-dark-text transition;
+    @apply font-unica text-light-text dark:text-dark-text transition;
   }
   .link {
-    @apply font-caveat text-2xl text-dark-darkBackground dark:text-light-background transition underline italic;
+    @apply font-unica text-dark-darkBackground dark:text-light-background transition underline italic;
   }
   span {
-    @apply font-caveat italic text-light-text dark:text-dark-text transition px-2 bg-light-accent dark:bg-dark-accent rounded-lg;
+    @apply font-unica italic text-light-text dark:text-dark-text transition px-2 bg-light-accent dark:bg-dark-accent rounded-lg;
   }
   button {
-    @apply font-caveat h-9 rounded-md text-dark-text dark:text-light-text transition hover:scale-105;
+    @apply font-unica h-9 rounded-md text-dark-text dark:text-light-text transition hover:scale-105;
   }
 }
 

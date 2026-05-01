@@ -9,7 +9,7 @@ const HeroAnimatedTitle = ({ children, key }) => (
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
     transition={{ duration: 2, ease: "easeIn" }}
-    className=" text-3xl mb-3"
+    className=" text-2xl mb-3"
   >
     {children}
   </motion.span>

@@ -33,6 +33,7 @@ export default {
       fontFamily: {
         londrina: ["Londrina Sketch", "cursive"],
         caveat: ["Caveat", "cursive"],
+        unica: ["Unica One", "sans-serif"],
       },
       animation: {
         fadeIn: "fadeIn 0.5s ease-in-out",
