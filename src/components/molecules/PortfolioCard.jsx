@@ -20,14 +20,14 @@ const PortfolioCard = ({
       target="_blank"
       rel="noreferrer"
       href={links[0]}
-      className="group relative w-full h-full overflow-hidden"
+      className="group relative w-full overflow-hidden rounded h-64"
     >
       <img
         src={img}
         className="w-full h-full object-cover scale-125 sepia-[.25] group-hover:scale-100 group-hover:blur-md group-hover:sepia duration-150"
       />
       <div
-        className="  absolute top-0 left-0 w-full h-full flex flex-col items-center justify-start gap-2 opacity-70 -translate-x-full group-hover:translate-x-0 transition-transform duration-200 overflow-hidden"
+        className="  absolute top-0 left-0 w-full md:w-1/2 h-full flex flex-col items-center justify-start gap-2 opacity-70 -translate-x-full group-hover:translate-x-0 transition-transform duration-200 overflow-hidden"
         style={{ backgroundImage: `url(${sBackground})` }}
       >
         <div className="w-full h-full grid grid-cols-2">

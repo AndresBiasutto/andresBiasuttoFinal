@@ -14,7 +14,7 @@ export const languages = [
     { src: redux, label: "Redux" },
     { src: express, label: "Express" },
     { src: tailwind, label: "Tailwind" },
-    { src: nodeJs, label: "Tailwind" },
+    { src: nodeJs, label: "Node.js" },
   ];
 
   export const databases = [

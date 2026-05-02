@@ -40,7 +40,7 @@ const imgUrls={
         esFlag: "https://images.vexels.com/media/users/3/164599/isolated/lists/ce858535b77f22068049aca2457e59ad-circulo-de-icono-de-idioma-de-bandera-de-espana.png"
     },
     portfolio:{
-        campusVirtual: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252754/campusVirtual_bnk049.png",
+        campusVirtual: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1777659528/Captura_de_pantalla_2026-04-27_163226_xdrwu6.png",
         lds: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252755/lds_cj4yhg.png",
         shamiUOS: "https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252755/shamiUOS_iopgoe.png",
         sml:"https://res.cloudinary.com/dvpchtyzq/image/upload/v1730252756/sml_efycdh.png"

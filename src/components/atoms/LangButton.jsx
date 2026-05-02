@@ -1,11 +1,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import img from "../../data/imgUrls"
 
 
 const LangButton = () => {
-    const flagEn= img.icons.enFlag;
-    const flagEs= img.icons.esFlag;
     const [toggle, setToggle] = useState(false)
     const { i18n } = useTranslation();
     const changeLanguage = (lng) => {
@@ -18,11 +15,11 @@ const handleClick= (lang)=>{
 }
   return (
     <div className="flex space-x-2">
-    <button className="h-6 w-6" onClick={() => handleClick(toggle? "en": "es")}>
+    <button className="h-6 w-6  flex items-center justify-center" onClick={() => handleClick(toggle? "en": "es")}>
       { toggle ? (
-        <img className="h-6 w-6" src={flagEs} />
+        <h4 className=" font-bold italic ">es</h4>
       ) : (
-        <img className="h-6 w-6" src={flagEn} />
+        <h4 className=" font-bold italic ">en</h4>
       )}
     </button>
   </div>

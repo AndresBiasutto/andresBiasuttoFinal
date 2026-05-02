@@ -52,23 +52,25 @@ const NavBar = () => {
               onClick={() => handleNavClick("about")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md`}
             >
-               {t("navBarBtns.about")}
+              {t("navBarBtns.about")}
             </button>
             <button
               onClick={() => handleNavClick("portfolio")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md`}
             >
-               {t("navBarBtns.portfolio")}
+              {t("navBarBtns.portfolio")}
             </button>
             <button
               onClick={() => handleNavClick("contact")}
               className={`text-light-text dark:text-dark-text px-2  mx-2 bg-light-secondary md:bg-transparent dark:bg-dark-secondary rounded-md`}
             >
-               {t("navBarBtns.contact")}
+              {t("navBarBtns.contact")}
             </button>
           </nav>
-              <LangButton />
-          <ThemeToggle />
+          <div className="flex flex-row justify-center items-center gap-2 px-1">
+            <ThemeToggle />
+            <LangButton />
+          </div>
         </div>
       </div>
     </div>

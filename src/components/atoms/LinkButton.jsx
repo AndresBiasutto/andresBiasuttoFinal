@@ -5,12 +5,12 @@ import { fadeInRight, buttonHover, buttonTap } from "../../utils/animations";
 
 const LinkButton = ({ scrollTo, download, icon, message }) => {
   return (
-    <div className="w-20 h-20 relative group overflow-hidden">
+    <div className="w-16 h-16 relative group overflow-hidden">
       <motion.a
         onClick={() => smoothScroll(scrollTo)}
         href={download}
         target={download ? "_blank" : undefined}
-        className="flex items-center justify-center w-full h-full rounded-full border-4 border-double bg-light-lightBackground hover:bg-light-background dark:bg-dark-darkBackground dark:hover:bg-dark-darkBackground border-light-accent dark:border-dark-accent transition overflow-hidden"
+        className="flex items-center justify-center w-full h-full rounded-lg border-4 border-double bg-light-lightBackground hover:bg-light-background dark:bg-dark-darkBackground dark:hover:bg-dark-darkBackground border-light-accent dark:border-dark-accent transition overflow-hidden"
         initial={fadeInRight.hidden}
         animate={fadeInRight.visible}
         whileHover={buttonHover}
